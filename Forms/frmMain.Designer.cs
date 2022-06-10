@@ -48,8 +48,11 @@
             this.lblLog = new System.Windows.Forms.Label();
             this.cmdOpenIni = new System.Windows.Forms.Button();
             this.pctBox = new System.Windows.Forms.PictureBox();
+            this.rdaDX9HW = new System.Windows.Forms.RadioButton();
             this.rdaDX1011HW = new System.Windows.Forms.RadioButton();
             this.rdaOGLHW = new System.Windows.Forms.RadioButton();
+            this.rdaDX9SW = new System.Windows.Forms.RadioButton();
+            this.rdaDX1011SW = new System.Windows.Forms.RadioButton();
             this.rdaOGLSW = new System.Windows.Forms.RadioButton();
             this.lblOverride = new System.Windows.Forms.Label();
             this.rdaNone = new System.Windows.Forms.RadioButton();
@@ -248,10 +251,22 @@
             this.pctBox.TabStop = false;
             this.pctBox.Click += new System.EventHandler(PreviewImageClick);
             // 
+            // rdaDX9HW
+            // 
+            this.rdaDX9HW.AutoSize = true;
+            this.rdaDX9HW.Location = new System.Drawing.Point(874, 111);
+            this.rdaDX9HW.Name = "rdaDX9HW";
+            this.rdaDX9HW.Size = new System.Drawing.Size(75, 17);
+            this.rdaDX9HW.TabIndex = 17;
+            this.rdaDX9HW.Tag = "1";
+            this.rdaDX9HW.Text = "D3D9 HW";
+            this.rdaDX9HW.UseVisualStyleBackColor = true;
+            this.rdaDX9HW.CheckedChanged += new System.EventHandler(this.rda_CheckedChanged);
+            // 
             // rdaDX1011HW
             // 
             this.rdaDX1011HW.AutoSize = true;
-            this.rdaDX1011HW.Location = new System.Drawing.Point(874, 115);
+            this.rdaDX1011HW.Location = new System.Drawing.Point(874, 129);
             this.rdaDX1011HW.Name = "rdaDX1011HW";
             this.rdaDX1011HW.Size = new System.Drawing.Size(81, 17);
             this.rdaDX1011HW.TabIndex = 18;
@@ -263,7 +278,7 @@
             // rdaOGLHW
             // 
             this.rdaOGLHW.AutoSize = true;
-            this.rdaOGLHW.Location = new System.Drawing.Point(874, 138);
+            this.rdaOGLHW.Location = new System.Drawing.Point(874, 147);
             this.rdaOGLHW.Name = "rdaOGLHW";
             this.rdaOGLHW.Size = new System.Drawing.Size(69, 17);
             this.rdaOGLHW.TabIndex = 19;
@@ -272,10 +287,34 @@
             this.rdaOGLHW.UseVisualStyleBackColor = true;
             this.rdaOGLHW.CheckedChanged += new System.EventHandler(this.rda_CheckedChanged);
             // 
+            // rdaDX9SW
+            // 
+            this.rdaDX9SW.AutoSize = true;
+            this.rdaDX9SW.Location = new System.Drawing.Point(971, 111);
+            this.rdaDX9SW.Name = "rdaDX9SW";
+            this.rdaDX9SW.Size = new System.Drawing.Size(74, 17);
+            this.rdaDX9SW.TabIndex = 20;
+            this.rdaDX9SW.Tag = "4";
+            this.rdaDX9SW.Text = "D3D9 SW";
+            this.rdaDX9SW.UseVisualStyleBackColor = true;
+            this.rdaDX9SW.CheckedChanged += new System.EventHandler(this.rda_CheckedChanged);
+            // 
+            // rdaDX1011SW
+            // 
+            this.rdaDX1011SW.AutoSize = true;
+            this.rdaDX1011SW.Location = new System.Drawing.Point(971, 129);
+            this.rdaDX1011SW.Name = "rdaDX1011SW";
+            this.rdaDX1011SW.Size = new System.Drawing.Size(80, 17);
+            this.rdaDX1011SW.TabIndex = 21;
+            this.rdaDX1011SW.Tag = "5";
+            this.rdaDX1011SW.Text = "D3D11 SW";
+            this.rdaDX1011SW.UseVisualStyleBackColor = true;
+            this.rdaDX1011SW.CheckedChanged += new System.EventHandler(this.rda_CheckedChanged);
+            // 
             // rdaOGLSW
             // 
             this.rdaOGLSW.AutoSize = true;
-            this.rdaOGLSW.Location = new System.Drawing.Point(971, 138);
+            this.rdaOGLSW.Location = new System.Drawing.Point(971, 147);
             this.rdaOGLSW.Name = "rdaOGLSW";
             this.rdaOGLSW.Size = new System.Drawing.Size(68, 17);
             this.rdaOGLSW.TabIndex = 22;
@@ -663,8 +702,11 @@
             this.Controls.Add(this.rdaNone);
             this.Controls.Add(this.lblOverride);
             this.Controls.Add(this.rdaOGLSW);
+            this.Controls.Add(this.rdaDX1011SW);
+            this.Controls.Add(this.rdaDX9SW);
             this.Controls.Add(this.rdaOGLHW);
             this.Controls.Add(this.rdaDX1011HW);
+            this.Controls.Add(this.rdaDX9HW);
             this.Controls.Add(this.lstGSDX);
             this.Controls.Add(this.pctBox);
             this.Controls.Add(this.cmdOpenIni);
@@ -714,8 +756,11 @@
         private System.Windows.Forms.Label lblLog;
         private System.Windows.Forms.Button cmdOpenIni;
         private System.Windows.Forms.PictureBox pctBox;
+        private System.Windows.Forms.RadioButton rdaDX9HW;
         private System.Windows.Forms.RadioButton rdaDX1011HW;
         private System.Windows.Forms.RadioButton rdaOGLHW;
+        private System.Windows.Forms.RadioButton rdaDX9SW;
+        private System.Windows.Forms.RadioButton rdaDX1011SW;
         private System.Windows.Forms.RadioButton rdaOGLSW;
         private System.Windows.Forms.Label lblOverride;
         private System.Windows.Forms.RadioButton rdaNone;

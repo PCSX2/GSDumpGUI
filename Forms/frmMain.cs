@@ -64,12 +64,21 @@ namespace GSDumpGUI
                         rdaNone.Checked = true;
                         break;
                     case 1:
-                        rdaDX1011HW.Checked = true;
+                        rdaDX9HW.Checked = true;
                         break;
                     case 2:
-                        rdaOGLHW.Checked = true;
+                        rdaDX1011HW.Checked = true;
                         break;
                     case 3:
+                        rdaOGLHW.Checked = true;
+                        break;
+                    case 4:
+                        rdaDX9SW.Checked = true;
+                        break;
+                    case 5:
+                        rdaDX1011SW.Checked = true;
+                        break;
+                    case 6:
                         rdaOGLSW.Checked = true;
                         break;
                 }
