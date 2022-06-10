@@ -63,13 +63,13 @@ namespace GSDumpGUI
                     case 0:
                         rdaNone.Checked = true;
                         break;
-                    case 2:
+                    case 1:
                         rdaDX1011HW.Checked = true;
                         break;
-                    case 3:
+                    case 2:
                         rdaOGLHW.Checked = true;
                         break;
-                    case 6:
+                    case 3:
                         rdaOGLSW.Checked = true;
                         break;
                 }
@@ -365,19 +365,24 @@ namespace GSDumpGUI
             String SelectedRenderer = "";
             switch (SelectedRad)
             {
-                // Null
                 case 0:
                     SelectedRenderer = "-1";
                     break;
-                // D3D11 HW
+                case 1:
+                    SelectedRenderer = "0";
+                    break;
                 case 2:
                     SelectedRenderer = "3";
                     break;
-                // OGL HW
                 case 3:
                     SelectedRenderer = "12";
                     break;
-                // OGL SW
+                case 4:
+                    SelectedRenderer = "1";
+                    break;
+                case 5:
+                    SelectedRenderer = "4";
+                    break;
                 case 6:
                     SelectedRenderer = "13";
                     break;
